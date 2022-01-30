@@ -1,0 +1,8 @@
+.boardColumn {
+  padding: 10px;
+  border-radius: 3px;
+}
+
+.boardColumnName {
+  background-color: white;
+}

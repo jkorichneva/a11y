@@ -1,0 +1,20 @@
+body {
+  font-family: 'OpenSans','Arial', sans-serif;
+  box-sizing: border-box;
+}
+
+@font-face {
+ font-family: 'OpenSans';
+ src: url('../../public/fonts/OpenSans-VariableFont_wdth,wght.ttf') format('truetype');
+ font-weight: 300 800;
+ font-stretch: 75% 100%;
+ font-style: normal;
+}
+
+@font-face {
+ font-family: 'OpenSansItalic';
+ src: url('../../public/fonts/OpenSans-Italic-VariableFont_wdth,wght.ttf') format('truetype');
+ font-weight: 300 800;
+ font-stretch: 75% 100%;
+ font-style: oblique 0deg 20deg;
+}
