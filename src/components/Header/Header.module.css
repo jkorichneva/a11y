@@ -1,0 +1,56 @@
+.AppLogo {
+}
+
+.Header {
+  display: flex;
+  justify-content: space-between;
+  padding-top: 33px;
+}
+
+.RightBlock {
+  display: flex;
+  align-items: center;
+}
+
+.LangButton {
+  background: #C7D2E9;
+  border-radius: 4px;
+  padding: 13px 18px;
+  font-size: 22px;
+  line-height: 26px;
+  margin-right: 8px;
+}
+
+.LoginBtn {
+  margin-left: 38px;
+  border: none;
+  background: transparent;
+}
+
+.SearchInput {
+    background: #F9F9FB;
+    border: 1px solid #C7D2E9;
+    box-sizing: border-box;
+    border-radius: 26px;
+    font-size: 22px;
+    line-height: 26px;
+    padding: 10px 30px 10px 13px;
+}
+
+.SearchSubmit {
+  background-image: url("./search.svg");
+  background-repeat: no-repeat;
+  background-color: transparent;
+  border: none;
+  appearance: none;
+  color: transparent;
+  width: 20px;
+  height: 20px;
+  position: absolute;
+  right: 20px;
+  top: calc(50% - 10px);
+}
+
+.Form {
+  position: relative;
+}
