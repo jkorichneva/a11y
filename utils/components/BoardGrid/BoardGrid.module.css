@@ -1,6 +1,0 @@
-.boardGrid {
-  display: grid;
-  grid-auto-columns: 350px;
-  grid-template-areas: "a a";
-  grid-column-gap: 30px;
-}

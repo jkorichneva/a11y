@@ -1,0 +1,42 @@
+.Cards {
+  display: flex;
+  justify-content: space-between;
+  padding-left: 0;
+  margin: 48px 0 0 0;
+  list-style: none;
+}
+
+.Li {
+  padding: 17px 0;
+  font-size: 22px;
+  line-height: 26px;
+  text-decoration: underline;
+  margin-right: 63px;
+  cursor: pointer;
+}
+.Li:hover {
+  text-decoration: none;
+}
+
+.LiChecked {
+  padding: 17px 50px;
+  font-size: 22px;
+  line-height: 26px;
+  text-decoration: none;
+  background: #C7D2E9;
+  border-radius: 8px;
+  margin-right: 35px;
+}
+
+.Filters {
+  display: flex;
+  padding-left: 0;
+  margin: 0;
+  list-style: none;
+}
+
+.Header {
+  font-size: 50px;
+  line-height: 59px;
+  margin-bottom: 40px;
+}

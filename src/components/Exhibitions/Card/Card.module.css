@@ -1,0 +1,35 @@
+.Card {
+  display: flex;
+  flex-direction: column;
+  width: calc(33% - 28px);
+}
+
+.Header {
+  font-size: 26px;
+  line-height: 30px;
+  margin-top: 24px;
+  font-weight: normal;
+}
+
+.Date {
+  margin-top: 16px;
+  font-size: 22px;
+  line-height: 26px;
+}
+
+.Description {
+  font-size: 16px;
+  line-height: 19px;
+  margin-top: 8px;
+}
+
+.Link {
+  margin-top: 24px;
+  color: black;
+  font-size: 16px;
+  line-height: 19px;
+}
+
+.Link:hover {
+  text-decoration: none;
+}

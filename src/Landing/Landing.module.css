@@ -1,15 +1,19 @@
-@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
 
 .SkipLink {
-
+  font-size: 22px;
+  line-height: 26px;
+  background: #C7D2E9;
+  padding: 13px 40px;
+  border-radius: 4px;
    position: absolute;
    top: -200px;
-   left: 2px;
    transition: top 0.2s;
+   z-index: 100;
 }
 
 .SkipLink:focus {
-  top: 20px
+  top: 20px;
 }
 
 .VHidden {
