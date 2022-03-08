@@ -2,7 +2,7 @@ import React, { useEffect, useState } from 'react';
 import styles from './Exhibitions.module.css';
 import commonStyles from '../../Landing/Landing.module.css';
 import t from '../../utils/translate';
-import Card from './Card/Card';
+import Card from '../../components/Card/Card';
 import cards from './cards';
 
 type ExhibitionsProps = {
@@ -103,7 +103,7 @@ function Exhibitions(props: ExhibitionsProps): JSX.Element {
   return (
     <section className={styles.Exhibitions} aria-labelledby="exhibitions-sec-h" id="exhibitions">
       <h2 id="exhibitions-sec-h" className={styles.Header}>{t('exhibitions', lang)}</h2>
-      <ul role="radiogroup" className={styles.Filters} aria-activedescendant={`#${filter}`} tabIndex={0} onKeyDown={(event) => handleKeydown(event)}>
+      <ul role="radiogroup" className={styles.Filters} aria-activedescendant={filter} tabIndex={0} onKeyDown={(event) => handleKeydown(event)}>
         {filters.map((item) => (
           // eslint-disable-next-line jsx-a11y/click-events-have-key-events
           <li

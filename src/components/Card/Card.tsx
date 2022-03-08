@@ -1,7 +1,7 @@
 import React from 'react';
 import Image from 'next/image';
 import styles from './Card.module.css';
-import { CardType } from '../cards';
+import { CardType } from '../../sections/Exhibitions/cards';
 
 export default function Card(card: CardType): JSX.Element {
   const {

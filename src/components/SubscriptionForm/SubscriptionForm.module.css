@@ -1,0 +1,73 @@
+.Input {
+  border: none;
+  border-bottom: 1px solid #000000;
+  background: transparent;
+  font-size: 18px;
+  line-height: 21px;
+  padding: 12px 0;
+  margin-right: 19px;
+}
+
+.InputWithError {
+  border: none;
+  border-bottom: 1px solid #000000;
+  background: transparent;
+  font-size: 18px;
+  line-height: 21px;
+  padding: 12px 0;
+  margin-right: 19px;
+  position: relative;
+}
+
+.InputBlockWithError {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  width: 303px;
+}
+
+.InputBlockWithError::after {
+  content: "x";
+  position: absolute;
+  color: red;
+ right: 25px;
+ top: 11px;
+}
+
+.Form {
+  margin-top: 35px;
+}
+
+.Submit {
+  padding: 12px 19px;
+  background: #5D16D5;
+  border-radius: 8px;
+  color: white;
+  border: none;
+  font-size: 18px;
+  line-height: 20px;
+  max-height: 44px;
+}
+
+.InputBlock {
+  display: flex;
+  flex-direction: column;
+  width: 303px;
+}
+
+.InputForm {
+  display: flex;
+  flex-direction: row;
+}
+
+.Error {
+  color: red;
+  margin-top: 8px;
+}
+
+.Submitted {
+   margin-top: 35px;
+}
+.Checkbox {
+  margin-top: 16px;
+}

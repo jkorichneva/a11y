@@ -1,0 +1,71 @@
+.Footer {
+  background: #F1F1F1;
+  display: flex;
+  padding: 73px 0 95px;
+}
+
+.InnerFooter {
+  max-width: 1230px;
+  margin: 0 auto;
+  display: flex;
+  width: 100%;
+}
+
+.Col {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+}
+
+.Col a {
+  font-size: 18px;
+  line-height: 21px;
+  margin-bottom: 16px;
+  color: black;
+  text-decoration: none;
+}
+
+.Col h3 {
+  font-size: 24px;
+  line-height: 28px;
+  margin: 0;
+}
+
+.Col a:hover {
+  opacity: 0.8;
+}
+
+.IconMail {
+  width: 40px;
+  display: inline-block;
+  height: 40px;
+  background-image: url('./images/email.svg');
+  background-repeat: no-repeat;
+  margin-right: 24px;
+}
+
+.IconTg {
+  width: 40px;
+  display: inline-block;
+  height: 40px;
+  background-image: url('./images/tg.svg');
+  background-repeat: no-repeat;
+  margin-right: 24px;
+}
+
+.IconFb {
+  width: 40px;
+  display: inline-block;
+  height: 40px;
+  background-image: url('./images/fb.svg');
+  background-repeat: no-repeat;
+  margin-right: 24px;
+}
+
+.Social {
+  margin-top: 24px;
+}
+
+.Social a {
+  margin-top: 15px;
+}

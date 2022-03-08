@@ -1,0 +1,14 @@
+.Text {
+  font-size: 22px;
+  line-height: 26px;
+}
+
+.Link {
+  color: black;
+  margin-top: 48px;
+  display: inline-block;
+}
+
+.Link:hover {
+  text-decoration: none;
+}

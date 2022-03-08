@@ -1,10 +1,11 @@
-import React from 'react';
+import React, { useState, useRef } from 'react';
 import Image from 'next/image';
 import logo from './logo.svg';
 import user from './user.svg';
 import styles from './Header.module.css';
 import commonStyles from '../../Landing/Landing.module.css';
 import t from '../../utils/translate';
+import Modal from '../../components/Modal/Modal';
 
 type HeaderProps = {
   lang: 'RU' | 'EN';
@@ -12,6 +13,9 @@ type HeaderProps = {
 
 function Header(props: HeaderProps): JSX.Element {
   const { lang } = props;
+  const [modalOpen, setModalOpen] = useState(false);
+  const loginBtn = useRef(null);
+
   return (
     <header className={styles.Header}>
       <Image src={logo} className={styles.Logo} alt="logo" />
@@ -35,10 +39,27 @@ function Header(props: HeaderProps): JSX.Element {
             {lang === 'RU' ? 'EN' : 'RU'}
           </a>
         </nav>
-        <button type="button" aria-label={t('login', lang)} className={styles.LoginBtn}>
+        <button
+          type="button"
+          aria-label={t('login', lang)}
+          className={styles.LoginBtn}
+          aria-haspopup
+          onClick={() => setModalOpen(true)}
+          ref={loginBtn}
+        >
           <Image src={user} className={styles.Logo} alt="login" aria-hidden />
         </button>
       </div>
+      {modalOpen && (
+      <Modal
+        lang={lang}
+        onClose={() => {
+          setModalOpen(false);
+          // @ts-ignore
+          loginBtn?.current?.focus();
+        }}
+      />
+      )}
     </header>
   );
 }

@@ -1,6 +1,8 @@
-import React from 'react';
+import React, { useRef } from 'react';
 import styles from './Museum.module.css';
 import t from '../../utils/translate';
+import Buildings from '../../components/Buildings/Buildings';
+import History from '../../components/History/History';
 
 type MuseumProps = {
   lang: 'RU' | 'EN';
@@ -9,8 +11,8 @@ type MuseumProps = {
 function Museum(props: MuseumProps): JSX.Element {
   const { lang } = props;
   const [tab, setTab] = React.useState<'history' | 'buildings'>('buildings');
-  const buildingsRef = React.createRef<HTMLButtonElement>();
-  const historyRef = React.createRef<HTMLButtonElement>();
+  const buildingsRef = useRef(null);
+  const historyRef = useRef(null);
 
   const handleKeydown = (event: React.KeyboardEvent<HTMLButtonElement>) => {
     switch (event.key) {
@@ -29,8 +31,10 @@ function Museum(props: MuseumProps): JSX.Element {
       case 'Home':
       case 'End':
         if (tab === 'history') {
+          // @ts-ignore
           buildingsRef?.current?.focus();
         } else {
+          // @ts-ignore
           historyRef?.current?.focus();
         }
         break;
@@ -72,9 +76,9 @@ function Museum(props: MuseumProps): JSX.Element {
           {t('history', lang)}
         </button>
       </div>
-      <div className={styles.Panel}>
-        {tab === 'buildings' && <div aria-labelledby="buildings-tab" id="buildings-tabpanel">Тут здания</div>}
-        {tab === 'history' && <div aria-labelledby="history-tab" id="history-tabpanel">Тут история</div>}
+      <div>
+        {tab === 'buildings' && <div aria-labelledby="buildings-tab" id="buildings-tabpanel" className={styles.Panel}><Buildings /></div>}
+        {tab === 'history' && <div aria-labelledby="history-tab" id="history-tabpanel" className={styles.Panel}><History /></div>}
       </div>
     </section>
   );

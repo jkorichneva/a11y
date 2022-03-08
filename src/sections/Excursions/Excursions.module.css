@@ -1,0 +1,24 @@
+.Header {
+  font-size: 50px;
+  line-height: 59px;
+  margin-bottom: 40px;
+  font-weight: normal;
+}
+
+.Text {
+  font-size: 22px;
+  line-height: 26px;
+  max-width: 700px;
+}
+
+.Text a {
+  color: #5D16D5;
+}
+
+.Text a:hover {
+  text-decoration: none;
+}
+
+.Excursions {
+  margin-bottom: 160px;
+}
