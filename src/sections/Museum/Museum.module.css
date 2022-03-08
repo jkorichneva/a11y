@@ -1,0 +1,33 @@
+.Header {
+  font-size: 50px;
+  line-height: 59px;
+  margin-bottom: 40px;
+  font-weight: normal;
+}
+
+.Tab {
+    padding: 17px 0;
+    font-size: 22px;
+    line-height: 26px;
+    text-decoration: underline;
+    margin-right: 63px;
+    cursor: pointer;
+    border: none;
+    background: white;
+}
+
+.TabActive {
+    padding: 17px 50px;
+    font-size: 22px;
+    line-height: 26px;
+    text-decoration: none;
+    background: #C7D2E9;
+    border-radius: 8px;
+    margin-right: 35px;
+    cursor: pointer;
+    border: none;
+}
+
+.Panel {
+  margin-top: 48px;
+}

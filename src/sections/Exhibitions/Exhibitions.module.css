@@ -1,6 +1,5 @@
 .Cards {
   display: flex;
-  justify-content: space-between;
   padding-left: 0;
   margin: 48px 0 0 0;
   list-style: none;
@@ -40,4 +39,5 @@
   font-size: 50px;
   line-height: 59px;
   margin-bottom: 40px;
+  font-weight: normal;
 }
