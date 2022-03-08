@@ -28,7 +28,7 @@ function Header(props: HeaderProps): JSX.Element {
           </span>
           <a
             className={styles.LangButton}
-            href={lang === 'RU' ? '/en' : '/'}
+            href={lang === 'RU' ? '/a11y/en' : '/a11y/'}
             hrefLang={lang === 'RU' ? 'en' : 'ru'}
             aria-label={lang === 'RU' ? 'English' : 'Русский'}
           >
