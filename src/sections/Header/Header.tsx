@@ -57,6 +57,7 @@ function Header(props: HeaderProps): JSX.Element {
           setModalOpen(false);
           // @ts-ignore
           loginBtn?.current?.focus();
+          document.body.style.overflow = 'auto';
         }}
       />
       )}
