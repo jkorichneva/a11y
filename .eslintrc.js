@@ -20,6 +20,7 @@ module.exports = {
     'react/jsx-filename-extension': [2, { extensions: ['.js', '.jsx', '.ts', '.tsx'] }],
     'react/jsx-props-no-spreading': 'off',
     'react/require-default-props': 'off',
+    'linebreak-style': 0,
   },
   settings: {
     'import/resolver': {
