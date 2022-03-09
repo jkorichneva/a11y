@@ -7,6 +7,7 @@ import styles from './Landing.module.css';
 import t from '../utils/translate';
 import Excursions from '../sections/Excursions/Excursions';
 import Footer from '../sections/Footer/Footer';
+import Video from '../sections/Video/Video';
 
 type LandingProps = {
   lang: 'RU' | 'EN';
@@ -23,6 +24,7 @@ function Landing(props: LandingProps): JSX.Element {
           <Navigation lang={lang} />
           <Exhibitions lang={lang} />
           <Museum lang={lang} />
+          <Video lang={lang} />
           <Excursions lang={lang} />
         </main>
       </div>

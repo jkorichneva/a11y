@@ -103,7 +103,15 @@ function Exhibitions(props: ExhibitionsProps): JSX.Element {
   return (
     <section className={styles.Exhibitions} aria-labelledby="exhibitions-sec-h" id="exhibitions">
       <h2 id="exhibitions-sec-h" className={styles.Header}>{t('exhibitions', lang)}</h2>
-      <ul role="radiogroup" className={styles.Filters} aria-activedescendant={filter} tabIndex={0} onKeyDown={(event) => handleKeydown(event)}>
+      <div className={commonStyles.VHidden} id="radiogroup-label">Фильтр по дате</div>
+      <ul
+        role="radiogroup"
+        className={styles.Filters}
+        aria-activedescendant={filter}
+        tabIndex={0}
+        onKeyDown={(event) => handleKeydown(event)}
+        aria-labelledby="radiogroup-label"
+      >
         {filters.map((item) => (
           // eslint-disable-next-line jsx-a11y/click-events-have-key-events
           <li
@@ -120,7 +128,7 @@ function Exhibitions(props: ExhibitionsProps): JSX.Element {
           </li>
         ))}
       </ul>
-      {liveArea && <div role="status" aria-live="polite" className={commonStyles.VHidden}>{t('exh_found', lang).replace('{amount}', shownCards.length.toString())}</div>}
+      {liveArea && <div role="alert" aria-live="polite" className={commonStyles.VHidden}>{t('exh_found', lang).replace('{amount}', shownCards.length.toString())}</div>}
       <ul className={styles.Cards}>
         {shownCards.length && shownCards.map((card) => (
           <Card {...card} />

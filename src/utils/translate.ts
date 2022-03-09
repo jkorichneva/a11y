@@ -115,6 +115,18 @@ const TRANSLATIONS = {
     RU: 'Вход',
     EN: 'Sign in',
   },
+  searchSubmit: {
+    RU: 'Искать',
+    EN: 'Search',
+  },
+  online: {
+    RU: 'Онлайн-трансляции',
+    EN: 'Online sessions',
+  },
+  webinarTitle: {
+    RU: 'Цвет настроения - доклад Глафиры Жур',
+    EN: 'Mood color - Glafira Zhur',
+  },
 };
 
 export default function t(phrase: string, lang: 'RU' | 'EN'): string {

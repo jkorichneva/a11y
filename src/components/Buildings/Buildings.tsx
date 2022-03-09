@@ -8,7 +8,7 @@ export default function Buildings() {
     <>
       {buildingsList.map((building) => (
         <div className={styles.Card}>
-          <Image src={building.img} alt={building.alt} />
+          <Image src={building.img} alt={building.alt} role="presentation" />
           <div className={styles.Header}>{building.header}</div>
           <div className={styles.Address}>{building.address}</div>
           <a

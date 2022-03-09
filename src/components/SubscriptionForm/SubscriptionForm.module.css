@@ -36,6 +36,8 @@
 
 .Form {
   margin-top: 35px;
+  display: flex;
+  flex-direction: row;
 }
 
 .Submit {
@@ -51,13 +53,19 @@
 
 .InputBlock {
   display: flex;
-  flex-direction: column;
-  width: 303px;
+  flex-direction: row;
+  min-width: 303px;
+  align-items: flex-end;
+  justify-content: flex-start;
+}
+
+.InputBlock input[type="email"] {
+  width: 100%;
 }
 
 .InputForm {
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
 }
 
 .Error {

@@ -23,8 +23,8 @@ export default function Footer({ lang }: FooterProps): JSX.Element {
           </div>
         </div>
         <div className={styles.Col}>
-          <h3>{t('subscription', lang)}</h3>
-          <SubscriptionForm lang={lang} />
+          <h3 id="form-header">{t('subscription', lang)}</h3>
+          <SubscriptionForm lang={lang} headerId="form-header" />
         </div>
       </div>
     </footer>

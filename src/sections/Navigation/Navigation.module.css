@@ -5,7 +5,15 @@
 .Navigation a {
   font-size: 18px;
   line-height: 21px;
-  margin-right: 40px;
-  display: inline-block;
   color: black;
+}
+
+.Navigation ul {
+  list-style: none;
+  padding: 0;
+}
+
+.Navigation li {
+  display: inline-block;
+  margin-right: 40px;
 }

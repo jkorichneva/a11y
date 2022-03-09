@@ -45,11 +45,10 @@ function Museum(props: MuseumProps): JSX.Element {
 
   return (
     <section aria-labelledby="museum-sec-h" id="museum">
-      <h2 className={styles.Header}>{t('museum', lang)}</h2>
+      <h2 className={styles.Header} id="museum-sec-h">{t('museum', lang)}</h2>
       <div role="tablist" aria-label="О музее">
         <button
           role="tab"
-          type="button"
           className={tab === 'buildings' ? styles.TabActive : styles.Tab}
           aria-selected={tab === 'buildings'}
           tabIndex={tab === 'buildings' ? 0 : -1}
@@ -63,7 +62,6 @@ function Museum(props: MuseumProps): JSX.Element {
         </button>
         <button
           role="tab"
-          type="button"
           className={tab === 'history' ? styles.TabActive : styles.Tab}
           aria-selected={tab === 'history'}
           tabIndex={tab === 'history' ? 0 : -1}

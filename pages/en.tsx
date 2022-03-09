@@ -7,7 +7,7 @@ function Page(): JSX.Element {
     <>
       <Head>
         <html lang="en" />
-        <title>The Pushkin state museum of fine arts website</title>
+        <title>Korichneva Yana The Pushkin state museum of fine arts website</title>
       </Head>
       <body>
         <Landing lang="EN" />

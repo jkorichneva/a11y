@@ -18,18 +18,18 @@ function Header(props: HeaderProps): JSX.Element {
 
   return (
     <header className={styles.Header}>
-      <Image src={logo} className={styles.Logo} alt="logo" />
+      <Image src={logo} className={styles.Logo} alt="logo" role="presentation" />
       <h1 className={commonStyles.VHidden}>{t('museumName', lang)}</h1>
       <div className={styles.RightBlock}>
         <form role="search" className={styles.Form}>
           <input type="search" aria-label={t('search', lang)} className={styles.SearchInput} />
-          <input type="submit" value="Search" className={styles.SearchSubmit} />
+          <input type="submit" value={t('searchSubmit', lang)} className={styles.SearchSubmit} />
         </form>
         <nav aria-label={t('changeLang', lang)}>
-          <span className={styles.LangButton}>
+          <div className={styles.LangButton}>
             <span aria-hidden="true">{lang === 'RU' ? 'RU' : 'EN'}</span>
             <span className={commonStyles.VHidden}>{lang === 'RU' ? 'Русский' : 'English'}</span>
-          </span>
+          </div>
           <a
             className={styles.LangButton}
             href={lang === 'RU' ? '/a11y/en' : '/a11y/'}
