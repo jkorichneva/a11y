@@ -9,21 +9,15 @@
   padding: 17px 0;
   font-size: 22px;
   line-height: 26px;
-  text-decoration: underline;
   margin-right: 63px;
   cursor: pointer;
   display: inline-block;
-}
-
-.Li:hover {
-  text-decoration: none;
 }
 
 .LiChecked {
   padding: 17px 50px;
   font-size: 22px;
   line-height: 26px;
-  text-decoration: none;
   background: #C7D2E9;
   border-radius: 8px;
   margin-right: 35px;

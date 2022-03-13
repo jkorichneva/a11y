@@ -127,6 +127,54 @@ const TRANSLATIONS = {
     RU: 'Цвет настроения - доклад Глафиры Жур',
     EN: 'Mood color - Glafira Zhur',
   },
+  afisha: {
+    RU: 'Афиша',
+    EN: 'Events',
+  },
+  buyTicket: {
+    RU: 'Купить билет на выставку',
+    EN: 'Buy ticket',
+  },
+  aboutMuseum: {
+    RU: 'о музее',
+    EN: 'about museum',
+  },
+  afishaCarousel: {
+    RU: 'Слайдер с текущими выставками',
+    EN: 'Slider with current exhibitions',
+  },
+  of: {
+    RU: 'из',
+    EN: 'of',
+  },
+  buyTicketBtn: {
+    RU: 'Купить билет',
+    EN: 'Buy ticket',
+  },
+  friend: {
+    RU: 'Стать другом',
+    EN: 'Become a friend',
+  },
+  onlineShop: {
+    RU: 'Онлайн-магазин',
+    EN: 'Online shop',
+  },
+  next: {
+    RU: 'Следующий слайд',
+    EN: 'Next slide',
+  },
+  prev: {
+    RU: 'Предыдущий слайд',
+    EN: 'Previous slide',
+  },
+  stop: {
+    RU: 'Остановить автопролистывание',
+    EN: 'Stop auto carousel',
+  },
+  resume: {
+    RU: 'Запустить автопролистывание',
+    EN: 'Resume auto carousel',
+  },
 };
 
 export default function t(phrase: string, lang: 'RU' | 'EN'): string {

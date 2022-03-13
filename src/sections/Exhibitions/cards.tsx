@@ -42,4 +42,5 @@ export type CardType = {
   link: string;
   tmw?: boolean;
   today?: boolean;
+  lang: 'RU' | 'EN';
 };

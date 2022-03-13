@@ -8,6 +8,10 @@
   color: black;
 }
 
+.Navigation a:hover {
+  text-decoration: none;
+}
+
 .Navigation ul {
   list-style: none;
   padding: 0;

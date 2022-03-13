@@ -44,7 +44,7 @@ export default function Modal({ lang, onClose }: ModalProps): JSX.Element {
         onKeyDown={(event) => handleKeyDown(event)}
       >
         <h2 tabIndex={-1} ref={modalRef}>{t('enter', lang)}</h2>
-        <button type="button" aria-label="Закрыть" className={styles.Close} onClick={onClose}>X</button>
+        <button type="button" aria-label="Закрыть" className={styles.Close} onClick={onClose} />
         <form className={styles.Form}>
           <input type="text" placeholder="Логин" className={styles.Input} aria-required="true" required />
           <input type="password" placeholder="Пароль" className={styles.Input} aria-required="true" required />

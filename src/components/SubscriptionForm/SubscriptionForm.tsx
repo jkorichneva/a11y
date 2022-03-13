@@ -50,7 +50,7 @@ export default function SubscriptionForm({ lang, headerId }: SubscriptionFormPro
           />
           {error && <span className={styles.Error} id="subscription_error">{error}</span>}
         </div>
-        <div className={styles.InputBlock}>
+        <div className={styles.InputCheckboxBlock}>
           <input type="checkbox" id="agreement" checked={checked} onChange={() => setChecked(!checked)} className={styles.Checkbox} />
           <label htmlFor="agreement">{t('agree', lang)}</label>
         </div>

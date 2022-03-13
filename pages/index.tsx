@@ -7,6 +7,7 @@ function Index(): JSX.Element {
     <>
       <Head>
         <html lang="ru" />
+        {/* eslint-disable-next-line max-len */}
         <title>Коричнева Яна - Сайт государственного музея изобразительных искусств имени А.С. Пушкина</title>
       </Head>
       <body>

@@ -46,7 +46,7 @@ function Museum(props: MuseumProps): JSX.Element {
   return (
     <section aria-labelledby="museum-sec-h" id="museum">
       <h2 className={styles.Header} id="museum-sec-h">{t('museum', lang)}</h2>
-      <div role="tablist" aria-label="О музее">
+      <div role="tablist" aria-label={t('aboutMuseum', lang)}>
         <button
           role="tab"
           className={tab === 'buildings' ? styles.TabActive : styles.Tab}

@@ -1,6 +1,5 @@
 import React from 'react';
 import Header from '../sections/Header/Header';
-import Navigation from '../sections/Navigation/Navigation';
 import Exhibitions from '../sections/Exhibitions/Exhibitions';
 import Museum from '../sections/Museum/Museum';
 import styles from './Landing.module.css';
@@ -8,6 +7,7 @@ import t from '../utils/translate';
 import Excursions from '../sections/Excursions/Excursions';
 import Footer from '../sections/Footer/Footer';
 import Video from '../sections/Video/Video';
+import Carousel from '../sections/Carousel/Carousel';
 
 type LandingProps = {
   lang: 'RU' | 'EN';
@@ -21,7 +21,7 @@ function Landing(props: LandingProps): JSX.Element {
         <a href="#main" className={styles.SkipLink}>{t('skipLink', lang)}</a>
         <Header lang={lang} />
         <main id="main">
-          <Navigation lang={lang} />
+          <Carousel lang={lang} />
           <Exhibitions lang={lang} />
           <Museum lang={lang} />
           <Video lang={lang} />

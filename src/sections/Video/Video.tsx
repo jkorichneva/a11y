@@ -8,7 +8,7 @@ type VideoProps = {
 
 export default function Video({ lang }: VideoProps) {
   return (
-    <section aria-labelledby="video-sec-h">
+    <section aria-labelledby="video-sec-h" id="online">
       <h2 id="video-sec-h" className={styles.Header}>{t('online', lang)}</h2>
       <div className={styles.VideoContainer}>
         <iframe

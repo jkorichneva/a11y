@@ -131,7 +131,7 @@ function Exhibitions(props: ExhibitionsProps): JSX.Element {
       {liveArea && <div role="alert" aria-live="polite" className={commonStyles.VHidden}>{t('exh_found', lang).replace('{amount}', shownCards.length.toString())}</div>}
       <ul className={styles.Cards}>
         {shownCards.length && shownCards.map((card) => (
-          <Card {...card} />
+          <Card {...card} lang={lang} />
         ))}
       </ul>
     </section>
