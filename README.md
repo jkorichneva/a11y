@@ -1,4 +1,7 @@
-# a11y landing
+# a11y landing of pushkin museum
+
+A project created when participating in a11y course, how to make web interfaces a11y-compliant.
+Published on https://jkorichneva.github.io/a11y/
 
 ## Available Scripts
 
